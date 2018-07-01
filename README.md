@@ -4,19 +4,30 @@
 
 本文大纲如下：
 * [使用说明](#使用说明)
-	* [1. 平台管理](#1-平台管理)
-		* [1.1 厂家管理](#11-厂家管理)
+	* [1. 素材管理](#1-素材管理)
+		* [1.1 厂家](#11-厂家)
 		* [1.2 Frame](#12-Frame)
 		* [1.3 Matcard](#13-Matcard])
 		* [1.4 Background](#14-Background])
 		* [1.5 Scene](#15-Scene])
-	* [2. 商户管理](#2-商户管理)	
+	* [2. 平台管理](#2-平台管理)	
+	* [3. 商户管理](#3-商户管理)
+	* [4. 用户管理](#4-用户管理)	
 
 ## 1. 平台管理
 
-###  1.1 **厂家管理**
+###  1.1 **厂家**
 
-```json
+上传图片 /api/v1/warehouse/upload/fctory
+增删改查  /api/v1/warehouse/fctory
+
+```
+{
+  "action":"update",//add update delete get getlist
+  "id":"zjC5wy14",
+  "info":["12345",9,true]
+}
+
 {
 
   "id": "",
@@ -34,9 +45,22 @@
 
 ###  1.2 **Frame**
 
-
+上传图片 /api/v1/warehouse/upload/frame
+增删改查  /api/v1/warehouse/info/frame
 
 ```
+{
+  "action":"update",//add update delete get getlist
+  "id":"zjC5wy14",
+  "info":["12345",9,true]
+}
+
+{
+  "action":"getlist",
+  "page":1,
+  "pagesize":10
+}
+
 {
 
   "id": "",
@@ -56,7 +80,22 @@
 ###  1.3 **Matcard**
 
 
+上传图片 /api/v1/warehouse/upload/matcard
+增删改查  /api/v1/warehouse/info/matcard
+
 ```
+{
+  "action":"update",//add update delete get getlist
+  "id":"zjC5wy14",
+  "info":["12345",9,true]
+}
+
+{
+  "action":"getlist",
+  "page":1,
+  "pagesize":10
+}
+
 {
 
   "id": "",
@@ -76,7 +115,22 @@
 ###  1.4 **Background**
 
 
+上传图片 /api/v1/warehouse/upload/background
+增删改查  /api/v1/warehouse/info/background
+
 ```
+{
+  "action":"update",//add update delete get getlist
+  "id":"zjC5wy14",
+  "info":["12345",9,true]
+}
+
+{
+  "action":"getlist",
+  "page":1,
+  "pagesize":10
+}
+
 {
 
   "id": "",
@@ -93,7 +147,22 @@
 ###  1.5 **Scene**
 
 
+上传图片 /api/v1/warehouse/upload/scene
+增删改查  /api/v1/warehouse/info/scene
+
 ```
+{
+  "action":"update",//add update delete get getlist
+  "id":"zjC5wy14",
+  "info":["12345",9,true]
+}
+
+{
+  "action":"getlist",
+  "page":1,
+  "pagesize":10
+}
+
 {
 
   "id": "",
@@ -107,5 +176,116 @@
 }
 
 ```
+## 2. 平台管理
 
-## 1. 商户管理
+###  2.1 **登录**
+
+短信登录 /api/v1/warehouse/platform/login
+第三方 /api/v1/warehouse/platform/trdparty/login
+```
+{
+
+  "codeid": "77be1c15-c0a1-413e-87c3-af90604ff071",
+  "code":"123456",
+  "deviceid" : "C3B38031-AC78-4C2C-9C4A-469A28C54E60",  
+  "nationcode":"86",
+  "userphone" : "15821703552"
+  
+}
+
+{
+  "openid": "openid2",
+  "deviceid":"dev1"
+}
+
+
+{
+    "action": "warehouseUserLogin",
+    "error": 0,
+    "desc": "SUCCESS",
+    "result": {
+        "createtime": "20180630230935",
+        "usericon": "",
+        "userphone": "15821703552",
+        "userid": "81lK4X4Wz0",
+        "deviceid": "C3B38031-AC78-4C2C-9C4A-469A28C54E60",
+        "nationcode": "86",
+        "username": "",
+	"auth":"" //拥有的权限
+    }
+}
+
+```
+增删改查子管理员  /api/v1/warehouse/platform/submanager
+
+```
+{
+  "action":"update",//add update delete get getlist
+  "name":"",
+  "auth":"",权限
+  "duty":""  职责
+}
+```
+
+
+## 3. 商户管理
+
+短信登录 /api/v1/warehouse/shopowner/login
+第三方 /api/v1/warehouse/shopowner/trdparty/login
+修改素材   /api/v1/warehouse/shopowner/update/{id}/{background,scene,matcord,frame}
+
+```
+{
+
+  "codeid": "77be1c15-c0a1-413e-87c3-af90604ff071",
+  "code":"123456",
+  "deviceid" : "C3B38031-AC78-4C2C-9C4A-469A28C54E60",  
+  "nationcode":"86",
+  "userphone" : "15821703552"
+  
+}
+
+{
+  "openid": "openid2",
+  "deviceid":"dev1"
+}
+
+{
+    "action": "warehouseUserLogin",
+    "error": 0,
+    "desc": "SUCCESS",
+    "result": {
+        "createtime": "20180630230935",
+        "usericon": "",
+        "userphone": "15821703552",
+        "viptime": "",
+        "background": "",//背景列表
+        "userid": "81lK4X4Wz0",
+        "deviceid": "C3B38031-AC78-4C2C-9C4A-469A28C54E60",
+        "nationcode": "86",
+        "matcard": "", //卡纸列表
+        "username": "",
+        "frame": "",//框列表
+        "scene": ""//场景列表
+    }
+}
+```
+
+增删改查子管理员、微代理  /api/v1/warehouse/shopowner/submanager
+设置素材是否上架    /api/v1/warehouse/shopowner/{material type}/{id}
+购买会员           /api/v1/warehouse/shopowner/buyvip
+
+```
+{
+  "action":"update",//add update delete get getlist
+  "name":"",
+  "auth":"",权限
+  "expire":"",过期时间
+  "duty":""  职责
+}
+```
+
+## 4. 用户管理
+
+
+
