@@ -18,8 +18,9 @@
 
 ###  1.1 **厂家**
 
-上传图片 /api/v1/warehouse/upload/fctory
-增删改查  /api/v1/warehouse/fctory
+>上传图片 /api/v1/warehouse/upload/fctory
+
+>增删改查  /api/v1/warehouse/fctory
 
 ```
 {
@@ -45,8 +46,9 @@
 
 ###  1.2 **Frame**
 
-上传图片 /api/v1/warehouse/upload/frame
-增删改查  /api/v1/warehouse/info/frame
+>上传图片 /api/v1/warehouse/upload/frame
+
+>增删改查  /api/v1/warehouse/info/frame
 
 ```
 {
@@ -80,8 +82,9 @@
 ###  1.3 **Matcard**
 
 
-上传图片 /api/v1/warehouse/upload/matcard
-增删改查  /api/v1/warehouse/info/matcard
+>上传图片 /api/v1/warehouse/upload/matcard
+
+>增删改查  /api/v1/warehouse/info/matcard
 
 ```
 {
@@ -115,8 +118,9 @@
 ###  1.4 **Background**
 
 
-上传图片 /api/v1/warehouse/upload/background
-增删改查  /api/v1/warehouse/info/background
+>上传图片 /api/v1/warehouse/upload/background
+
+>增删改查  /api/v1/warehouse/info/background
 
 ```
 {
@@ -147,8 +151,9 @@
 ###  1.5 **Scene**
 
 
-上传图片 /api/v1/warehouse/upload/scene
-增删改查  /api/v1/warehouse/info/scene
+>上传图片 /api/v1/warehouse/upload/scene
+
+>增删改查  /api/v1/warehouse/info/scene
 
 ```
 {
@@ -180,8 +185,10 @@
 
 ###  2.1 **登录**
 
-短信登录 /api/v1/warehouse/platform/login
-第三方 /api/v1/warehouse/platform/trdparty/login
+>短信登录 /api/v1/warehouse/platform/login
+
+>第三方 /api/v1/warehouse/platform/trdparty/login
+
 ```
 {
 
@@ -216,7 +223,8 @@
 }
 
 ```
-增删改查子管理员  /api/v1/warehouse/platform/submanager
+
+>增删改查子管理员  /api/v1/warehouse/platform/submanager
 
 ```
 {
@@ -230,9 +238,11 @@
 
 ## 3. 商户管理
 
-短信登录 /api/v1/warehouse/shopowner/login
-第三方 /api/v1/warehouse/shopowner/trdparty/login
-修改素材   /api/v1/warehouse/shopowner/update/{id}/{background,scene,matcord,frame}
+>短信登录 /api/v1/warehouse/shopowner/login
+
+>第三方 /api/v1/warehouse/shopowner/trdparty/login
+
+>修改素材   /api/v1/warehouse/shopowner/update/{id}/{background,scene,matcord,frame}
 
 ```
 {
@@ -271,9 +281,11 @@
 }
 ```
 
-增删改查子管理员、微代理  /api/v1/warehouse/shopowner/submanager
-设置素材是否上架    /api/v1/warehouse/shopowner/{material type}/{id}
-购买会员           /api/v1/warehouse/shopowner/buyvip
+>增删改查子管理员、微代理  /api/v1/warehouse/shopowner/submanager
+
+>设置素材是否上架    /api/v1/warehouse/shopowner/{material type}/{id}
+
+>购买会员           /api/v1/warehouse/shopowner/buyvip
 
 ```
 {
