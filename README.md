@@ -58,9 +58,15 @@
 }
 
 {
-  "action":"getlist",
+  "action":"getlist",//检索
   "page":1,
-  "pagesize":10
+  "pagesize":10,
+  "name":"名称", //选填
+  "factory":"厂家",//选填
+  "color":"",//选填
+  "style":"风格",//选填
+  "paytype":"付费类型",//选填
+  "state":"状态" //选填
 }
 
 {
@@ -69,7 +75,7 @@
   "info":"",
   "name":"名称",
   "factory":"厂家",
-  "color":"url地址",
+  "color":"",
   "style":"风格",
   "paytype":"付费类型",
   "state":"状态",
@@ -94,9 +100,15 @@
 }
 
 {
-  "action":"getlist",
+  "action":"getlist",//检索
   "page":1,
-  "pagesize":10
+  "pagesize":10,
+  "name":"名称", //选填
+  "factory":"厂家",//选填
+  "color":"",//选填
+  "style":"风格",//选填
+  "paytype":"付费类型",//选填
+  "state":"状态" //选填
 }
 
 {
@@ -105,7 +117,7 @@
   "info":"",
   "name":"名称",
   "factory":"厂家",
-  "color":"url地址",
+  "color":"",
   "style":"风格",
   "paytype":"付费类型",
   "state":"状态",
@@ -130,9 +142,15 @@
 }
 
 {
-  "action":"getlist",
+  "action":"getlist",//检索
   "page":1,
-  "pagesize":10
+  "pagesize":10,
+  "name":"名称", //选填
+  "factory":"厂家",//选填
+  "color":"",//选填
+  "style":"风格",//选填
+  "paytype":"付费类型",//选填
+  "state":"状态" //选填
 }
 
 {
@@ -163,9 +181,15 @@
 }
 
 {
-  "action":"getlist",
+  "action":"getlist",//检索
   "page":1,
-  "pagesize":10
+  "pagesize":10,
+  "name":"名称", //选填
+  "factory":"厂家",//选填
+  "color":"",//选填
+  "style":"风格",//选填
+  "paytype":"付费类型",//选填
+  "state":"状态" //选填
 }
 
 {
