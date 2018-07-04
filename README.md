@@ -26,7 +26,7 @@
 {
   "action":"update",//add update delete get getlist
   "id":"zjC5wy14",
-  "info":["12345",9,true]
+  "info":""  //选填
 }
 
 {
@@ -54,7 +54,14 @@
 {
   "action":"update",//add update delete get getlist
   "id":"zjC5wy14",
-  "info":["12345",9,true]
+  "info":"",
+  "name":"名称",
+  "factory":"厂家",
+  "color":"",
+  "style":"风格",
+  "paytype":"付费类型",
+  "state":"状态",
+  "createtime":"创建时间"
 }
 
 {
@@ -138,7 +145,7 @@
 {
   "action":"update",//add update delete get getlist
   "id":"zjC5wy14",
-  "info":["12345",9,true]
+  "info":""
 }
 
 {
@@ -177,7 +184,7 @@
 {
   "action":"update",//add update delete get getlist
   "id":"zjC5wy14",
-  "info":["12345",9,true]
+  "info":""
 }
 
 {
@@ -209,11 +216,11 @@
 
 ###  2.1 **登录**
 
->短信登录 /api/v1/warehouse/platform/login
+>登录 /api/v1/warehouse/platform/login
 
->第三方 /api/v1/warehouse/platform/trdparty/login
 
 ```
+//短信登录
 {
 
   "codeid": "77be1c15-c0a1-413e-87c3-af90604ff071",
@@ -224,6 +231,7 @@
   
 }
 
+//第三方
 {
   "openid": "openid2",
   "deviceid":"dev1"
@@ -248,7 +256,7 @@
 
 ```
 
->增删改查子管理员  /api/v1/warehouse/platform/submanager
+>增删改查子管理员  /api/v1/warehouse/platform
 
 ```
 {
@@ -262,13 +270,13 @@
 
 ## 3. 商户管理
 
->短信登录 /api/v1/warehouse/shopowner/login
+>登录 /api/v1/warehouse/shopowner/login
 
->第三方 /api/v1/warehouse/shopowner/trdparty/login
 
->修改素材   /api/v1/warehouse/shopowner/update/{id}/{background,scene,matcord,frame}
+>修改素材   /api/v1/warehouse/shopowner
 
 ```
+//短信登录
 {
 
   "codeid": "77be1c15-c0a1-413e-87c3-af90604ff071",
@@ -278,12 +286,18 @@
   "userphone" : "15821703552"
   
 }
-
+//第三方
 {
   "openid": "openid2",
   "deviceid":"dev1"
 }
 
+//修改素材
+{
+ "action":"update",
+ "field":"frame",//修改哪个字段就填哪个字段，目前只能改素材background，matcard，scene
+ "frame":"ssgsdg" //填要改的 对应字段的内容
+}
 {
     "action": "warehouseUserLogin",
     "error": 0,
