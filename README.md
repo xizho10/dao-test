@@ -337,5 +337,14 @@
 
 ## 4. 用户管理
 
+>查询用户列表  /api/v1/warehouse/user
 
+```
+{
+  "action": "getlist",
+  "type":"trdparty",//查询通过第三方注册的用户，填其他值是手机号注册的用户
+  "page":1,
+  "pagesize":10
+}
+```
 
