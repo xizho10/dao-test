@@ -374,5 +374,20 @@
   "page":1,
   "pagesize":10
 }
+
+{
+  "action": "getrecordlist",//购买记录
+  "userid":"70JuTJyGgc",
+  "page":1,
+  "pagesize":10
+}
+
+{
+  "action": "getinviterecordlist",//邀请记录
+  "userid":"70JuTJyGgc",
+  "page":1,
+  "pagesize":10
+}
+
 ```
 
