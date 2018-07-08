@@ -341,6 +341,11 @@
 
 ```
 {
+  "action": "get",//通过userid或手机号查询
+  "userid":"70PA4KY1bd",
+  "usrphone":"15821703552"
+}
+{
   "action": "getlist",
   "type":"trdparty",//查询通过第三方注册的用户，填其他值是手机号注册的用户
   "page":1,
