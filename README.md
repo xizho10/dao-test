@@ -222,7 +222,6 @@
 ```
 //短信登录
 {
-
   "codeid": "77be1c15-c0a1-413e-87c3-af90604ff071",
   "code":"123456",
   "deviceid" : "C3B38031-AC78-4C2C-9C4A-469A28C54E60",  
@@ -256,17 +255,28 @@
 
 ```
 
->增删改查子管理员  /api/v1/warehouse/platform
+>添加子管理员  /api/v1/warehouse/platform/login
 
 ```
 {
-  "action":"update",//add update delete get getlist
-  "name":"",
-  "auth":"",权限
-  "duty":""  职责
+  "action": "addSubManager",
+  "openid":"12345",
+  "deviceid":"deviceid",
+  "username":"user x",
+  "auth":"frame,backgroud",
+  "duty":"yunying"
 }
 ```
+>查询管理员列表 /api/v1/warehouse/platform
 
+```
+{
+
+  "action": "getlist",
+  "page":1,
+  "pagesize":10
+}
+```
 
 ## 3. 商户管理
 
