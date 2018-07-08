@@ -267,6 +267,19 @@
   "duty":"yunying"
 }
 ```
+
+>关闭子管理员权限 /api/v1/warehouse/platform
+
+```
+{
+
+  "action": "update",
+  "userid":"p81lASuaCxD2",
+  "field":"state",
+  "state":"disable"
+}
+```
+
 >查询管理员列表 /api/v1/warehouse/platform
 
 ```
