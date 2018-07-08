@@ -18,9 +18,9 @@
 
 ###  1.1 **厂家**
 
->上传图片 /api/v1/warehouse/upload/fctory
+>上传图片 /api/v1/warehouse/upload/factory
 
->增删改查  /api/v1/warehouse/fctory
+>增删改查  /api/v1/warehouse/factory
 
 ```
 {
