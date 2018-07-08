@@ -285,7 +285,7 @@
 ```
 {
 
-  "action": "getlist",
+  "action": "getlist",//查询一个 用 get，并填userid字段
   "page":1,
   "pagesize":10
 }
