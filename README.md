@@ -26,7 +26,11 @@
 {
   "action":"update",//add update delete get getlist
   "id":"zjC5wy14",
-  "info":""  //选填
+  "info":"",  //选填
+  "name":"厂家名称",
+  "displayname":"显示昵称",
+  "icon":"url地址",
+  "createtime":"创建时间"
 }
 
 {
