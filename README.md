@@ -376,7 +376,7 @@
 }
 {
   "action": "getlist",
-  "type":"trdparty",//查询通过第三方注册的用户，填其他值是手机号注册的用户
+  "type":"trdparty",//查询通过第三方注册的用户，tourist游客密码注册,填其他值是手机号注册的用户
   "page":1,
   "pagesize":10
 }
