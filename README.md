@@ -268,15 +268,17 @@
 }
 ```
 
->关闭子管理员权限 /api/v1/warehouse/platform
+>修改子管理员信息 /api/v1/warehouse/platform
 
 ```
 {
 
   "action": "update",
-  "userid":"p81lASuaCxD2",
-  "field":"state",
-  "state":"disable"
+  "userid":"p81nPaYm1Du",
+  "state":"disable"，
+  "comment":"sdgsg",
+  "auth":"frame#platform#",
+  "duty":"duty"
 }
 ```
 
