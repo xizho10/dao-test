@@ -87,6 +87,7 @@
   "name":"名称",
   "factory":"厂家",
   "color":"",
+  "seqnumber":"",编号
   "style":"风格",
   "paytype":"付费类型",
   "state":"状态",
@@ -129,6 +130,7 @@
   "name":"名称",
   "factory":"厂家",
   "color":"",
+  "seqnumber":"编号",
   "style":"风格",
   "paytype":"付费类型",
   "state":"状态",
@@ -342,25 +344,42 @@
         "nationcode": "86",
         "matcard": "", //卡纸列表
         "username": "",
-        "frame": "",//框列表
+        "frame": "",//框列表  id:0,id2:1,id3:0  是否上架
         "scene": ""//场景列表
     }
 }
 ```
 
->增删改查子管理员、微代理  /api/v1/warehouse/shopowner/submanager
-
->设置素材是否上架    /api/v1/warehouse/shopowner/{material type}/{id}
-
->购买会员           /api/v1/warehouse/shopowner/buyvip
+>增删改查子管理员、微代理  /api/v1/warehouse/shopowner
 
 ```
 {
-  "action":"update",//add update delete get getlist
-  "name":"",
-  "auth":"",权限
-  "expire":"",过期时间
-  "duty":""  职责
+  "action":"addSubAgent",//或addSubManager
+  "userid":"81i2UVI3QI",
+  "openid":"223",
+  "deviceid":""
+
+}
+```
+
+>设置素材是否上架    /api/v1/warehouse/shopowner
+
+```
+{
+  "action":"update",//
+  "userid":"81i2UVI3QI",
+  "frame":"223"  //等熟悉
+}
+```
+
+>购买会员           /api/v1/warehouse/shopowner
+
+```
+{
+  "action":"buyvip",//add update delete get getlist
+  "userid":"81i2UVI3QI",
+  "buy":"31",//个数
+  "type":"outframe"  //购买类型outframe infram outmatcard middlematcard inmatcard submanager agent  a套餐
 }
 ```
 
