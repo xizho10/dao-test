@@ -323,12 +323,8 @@
   "deviceid":"dev1"
 }
 
-//修改素材
-{
- "action":"update",
- "field":"frame",//修改哪个字段就填哪个字段，目前只能改素材background，matcard，scene
- "frame":"ssgsdg" //填要改的 对应字段的内容
-}
+
+
 {
     "action": "warehouseUserLogin",
     "error": 0,
@@ -350,7 +346,7 @@
 }
 ```
 
->增删改查子管理员、微代理  /api/v1/warehouse/shopowner
+>增子管理员、微代理  /api/v1/warehouse/shopowner
 
 ```
 {
@@ -361,14 +357,35 @@
 
 }
 ```
+>更新子管理员、微代理状态  /api/v1/warehouse/shopowner
 
->设置素材是否上架    /api/v1/warehouse/shopowner
+```
+{
+  "action":"updateSubAgent",//或updateSubManager
+  "userid":"81i2UVI3QI",
+  "subid":"223",
+  "state":"disable"
+}
+```
+
+
+>删除子管理员、微代理  /api/v1/warehouse/shopowner
+
+```
+{
+  "action":"deleteSubAgent",//或deleteSubManager
+  "userid":"81i2UVI3QI",
+  "subid":"223"
+}
+```
+
+>设置素材    /api/v1/warehouse/shopowner
 
 ```
 {
   "action":"update",//
   "userid":"81i2UVI3QI",
-  "frame":"223"  //等熟悉
+  "frame":"223"  //支持多个字段
 }
 ```
 
