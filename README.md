@@ -404,7 +404,7 @@
 ```
 查询素材  
 {
-  "action":"getmaterial",
+  "action":"getmateriallist",
   "userid":"81i2UVI3QI",
   "subid":"81i2UVI3QI",//可选
   "mtype":"frame"  //可选
@@ -412,7 +412,7 @@
 
 查询商户关联的管理员和代理员
 {
-  "action":"getrelate",
+  "action":"getrelatelist",
   "userid":"81i2UVI3QI"
 }
 
