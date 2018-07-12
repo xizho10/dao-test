@@ -399,17 +399,31 @@
 }
 ```
 
->设置素材    /api/v1/warehouse/shopowner
+>查询    /api/v1/warehouse/shopowner
 
 ```
+查询素材  
 {
-  "action":"update",//
+  "action":"getmaterial",
   "userid":"81i2UVI3QI",
-  "frame":"223"  //支持多个字段
+  "subid":"81i2UVI3QI",//可选
+  "mtype":"frame"  //可选
+}
+
+查询商户关联的管理员和代理员
+{
+  "action":"getrelate",
+  "userid":"81i2UVI3QI"
+}
+
+查询商户、管理员、代理员
+{
+  "action":"get",
+  "userid":"81i2UVI3QI"
 }
 ```
 
->购买会员           /api/v1/warehouse/shopowner
+>购买会员     /api/v1/warehouse/shopowner
 
 ```
 {
