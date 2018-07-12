@@ -304,8 +304,6 @@
 >登录 /api/v1/warehouse/shopowner/login
 
 
->修改素材   /api/v1/warehouse/shopowner
-
 ```
 //短信登录
 {
@@ -344,6 +342,28 @@
         "scene": ""//场景列表
     }
 }
+```
+>修改信息   /api/v1/warehouse/shopowner
+
+```
+修改基本信息
+{
+  "action": "update",
+  "userid":"ShopID@81W71SP5gu",
+  .....
+} 
+
+添加和修改素材
+{
+  "action": "update",
+  "userid":"ShopID@81W71SP5gu",
+  "subaction":"add",//update
+  "subid":"SubAgent@81JNyWq0Y0",//如果是商户自己，subid请填自己的userid
+  "mtype":"frame",
+  "mid":"FrameID@81ZDGaqXzH@20180711132148",
+  "mstate":"disable",
+ }
+
 ```
 
 >增子管理员、微代理  /api/v1/warehouse/shopowner
