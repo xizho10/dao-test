@@ -421,6 +421,11 @@
   "action":"get",
   "userid":"81i2UVI3QI"
 }
+购买记录
+{
+  "action":"getbuyrecordlist",
+  "userid":"81i2UVI3QI"
+}
 ```
 
 >购买会员     /api/v1/warehouse/shopowner
