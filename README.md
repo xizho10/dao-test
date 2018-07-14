@@ -293,7 +293,7 @@
 ```
 {
 
-  "action": "getsubmanagerlist",//如果要查询子管理员对应的超级管理员，就加subid字段
+  "action": "getsubmanagerlist",//
   "userid":"fojsjsljg",
   "page":1,
   "pagesize":10
