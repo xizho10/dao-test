@@ -261,7 +261,7 @@
 
 ```
 
->添加子管理员  /api/v1/warehouse/platform/login
+>添加子管理员  /api/v1/warehouse/platform
 
 ```
 {
@@ -288,12 +288,36 @@
 }
 ```
 
->查询管理员列表 /api/v1/warehouse/platform
+>查询对应子管理员列表 /api/v1/warehouse/platform
 
 ```
 {
 
-  "action": "getlist",//查询一个 用 get，并填userid字段
+  "action": "getsubmanagerlist",//如果要查询子管理员对应的超级管理员，就加subid字段
+  "userid":"fojsjsljg",
+  "page":1,
+  "pagesize":10
+}
+```
+>查询所有管理员 
+
+```
+{
+
+  "action": "getlist",//如果要根据类型查询  type 填  admin 或submanager
+  "page":1,
+  "pagesize":10
+}
+```
+
+>删除子管理员 /api/v1/warehouse/platform
+
+```
+{
+
+  "action": "getsubmanagerlist",
+  "userid":"fojsjsljg",
+  "subid":"sgsg"
   "page":1,
   "pagesize":10
 }
