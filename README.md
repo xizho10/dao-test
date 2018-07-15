@@ -494,5 +494,13 @@
   "pagesize":10
 }
 
+{
+  "action": "update",//更新
+  "userid":"808bHHoLhs",
+  "comment":"nothing",
+  "state":"black",
+  "viptime":"2345"
+ }
+
 ```
 
