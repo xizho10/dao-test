@@ -391,12 +391,22 @@
 
 ```
 
->增子管理员、微代理  /api/v1/warehouse/shopowner
+>新增商户  /api/v1/warehouse/shopowner
+
+```
+{
+  "action":"addShopOwner",
+  "openid":"223",
+  "deviceid":""
+
+}
+```
+
+>新增子管理员、微代理  /api/v1/warehouse/shopowner
 
 ```
 {
   "action":"addSubAgent",//或addSubManager
-  "userid":"81i2UVI3QI",
   "openid":"223",
   "deviceid":""
 
