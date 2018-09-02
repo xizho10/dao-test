@@ -476,10 +476,9 @@
 
 ```
 {
-  "action":"buyvip",//add update delete get getlist
+  "action":"buyvip",
   "userid":"81i2UVI3QI",
-  "buy":"31",//个数
-  "type":"outframe"  //购买类型outframe infram outmatcard middlematcard inmatcard submanager agent  a套餐
+  "buy":["81TJfIkxiF"] // 订单id
 }
 ```
 
