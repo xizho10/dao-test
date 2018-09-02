@@ -340,7 +340,16 @@
   "userphone" : "15821703552"
   
 }
-//第三方
+//第三方  商户注册需要短信验证
+{
+  "openid": "openid2",
+  "deviceid":"dev1"，
+  "codeid": "efe06cf1-fd52-4233-bad4-40cb0dbdddbe",
+  "code":"123456",
+  "userphone" : "15821703552",
+}
+
+//第三方  登录
 {
   "openid": "openid2",
   "deviceid":"dev1"
