@@ -478,7 +478,7 @@
 {
   "action":"buyvip",
   "userid":"81i2UVI3QI",
-  "buy":["81TJfIkxiF"] // 订单id
+  "buy":["81TJfIkxiF"] // 订单id  outframe,inframe,outmatcard,middlematcard,inmatcard,submanager,subagent
 }
 ```
 
