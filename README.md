@@ -482,6 +482,51 @@
 }
 ```
 
+>vip使用情况     /api/v1/warehouse/shopowner
+
+```
+{
+  "action": "getvipused",
+  "userid":"ShopID@81N8fk1FKo"
+}
+
+{
+    "action": "updateShopowner",
+    "error": 0,
+    "desc": "SUCCESS",
+    "result": {
+        "outmatcard": [
+            0,  //上架
+            1   // 下架
+        ],
+        "subagent": [
+            0,
+            0
+        ],
+        "inmatcard": [
+            0,
+            0
+        ],
+        "middlematcard": [
+            0,
+            0
+        ],
+        "submanager": [
+            0,
+            0
+        ],
+        "inframe": [
+            0,
+            0
+        ],
+        "outframe": [
+            1,
+            0
+        ]
+    }
+}
+```
+
 ## 4. 用户管理
 
 >查询用户列表  /api/v1/warehouse/user
